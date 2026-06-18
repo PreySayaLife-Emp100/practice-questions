@@ -52,7 +52,7 @@
                     }
                     if (num > totalamountinatm)
                     {
-                        Console.WriteLine("Insufficient cash");
+                        Console.WriteLine("Insufficient cash!!");
                         return;
                     }
                     else
@@ -79,12 +79,12 @@
                         }
                         if (remainingamount == 0)
                         {
-                            Console.WriteLine("Success");
+                            Console.WriteLine("Success!!");
                             foreach (KeyValuePair<int, int> k in despensenotes)
                             {
                                 Console.WriteLine($"{k.Key} : {k.Value}");
                             }
-                            Console.WriteLine("Remainig notes in atm");
+                            Console.WriteLine("Remainig notes in ATM");
                             foreach (KeyValuePair<int, int> k in noteinatm)
                             {
                                 Console.WriteLine($"{k.Key} : {k.Value}");
