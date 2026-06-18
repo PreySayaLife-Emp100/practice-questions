@@ -1,0 +1,15 @@
+C:\Users\DELL\Desktop\git\practice-questions\atm\bin\Debug\net10.0\atm.exe
+C:\Users\DELL\Desktop\git\practice-questions\atm\bin\Debug\net10.0\atm.deps.json
+C:\Users\DELL\Desktop\git\practice-questions\atm\bin\Debug\net10.0\atm.runtimeconfig.json
+C:\Users\DELL\Desktop\git\practice-questions\atm\bin\Debug\net10.0\atm.dll
+C:\Users\DELL\Desktop\git\practice-questions\atm\bin\Debug\net10.0\atm.pdb
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.AssemblyInfo.cs
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.sourcelink.json
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.dll
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\refint\atm.dll
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.pdb
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\atm.genruntimeconfig.cache
+C:\Users\DELL\Desktop\git\practice-questions\atm\obj\Debug\net10.0\ref\atm.dll
