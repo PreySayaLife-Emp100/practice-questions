@@ -20,15 +20,26 @@ namespace AWSLambdaATM
                 {
                     return Createresponse(400, new { error = "Invalid or empty request body" }, headers);
                 }
-
-                int num = atmRequest.Amount;
-
-                var noteinatm = new Dictionary<int, int>
+                var noteinatm = atmRequest.notesinatm ?? new Dictionary<int, int>
                 {
                     { 500, 20 },
                     { 200, 20 },
                     { 100, 50 }
                 };
+                int totalamountinatm = TotalAmountInATM(noteinatm);
+                switch (atmRequest.operation)
+                {
+                    case 'a':
+                        return Createresponse(200, new { TotalBalance = totalamountinatm }, headers);
+                    case 'w':
+                        break;
+                    default:
+                        return Createresponse(400, new { error = "Enter valid char" }, headers);
+                }
+
+                int num = atmRequest.Amount;
+
+
 
                 var despensenotes = new Dictionary<int, int> { { 500, 0 }, { 200, 0 }, { 100, 0 } };
 
@@ -37,11 +48,7 @@ namespace AWSLambdaATM
                     return Createresponse(400, new { error = "Enter positive amount and multiple of 100" }, headers);
                 }
 
-                int totalamountinatm = 0;
-                foreach (KeyValuePair<int, int> k in noteinatm)
-                {
-                    totalamountinatm += (k.Value * k.Key);
-                }
+
 
                 if (num > totalamountinatm)
                 {
@@ -97,9 +104,20 @@ namespace AWSLambdaATM
                 Headers = headers
             };
         }
+        private int TotalAmountInATM(Dictionary<int, int> n)
+        {
+            int totalamountinatm = 0;
+            foreach (KeyValuePair<int, int> k in n)
+            {
+                totalamountinatm += (k.Value * k.Key);
+            }
+            return totalamountinatm;
+        }
     }
     public class AtmRequest()
     {
-        public int Amount {  get; set; }
+        public char operation { get; set; }
+        public int Amount { get; set; }
+        public Dictionary<int, int> notesinatm { get; set; }
     }
 }

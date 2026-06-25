@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AWSLambdaATM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33703254bc9fb6a083c267ff0ba8dd19564fba84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9641c2f888cc20fa30c6111b9efbea42049a4659")]
 [assembly: System.Reflection.AssemblyProductAttribute("AWSLambdaATM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AWSLambdaATM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
